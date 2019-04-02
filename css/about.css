@@ -1,0 +1,27 @@
+body{
+    background: black;
+    color:white;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+
+}
+
+header{
+    font-size: 25px;
+    color:dodgerblue;
+    height:300px;
+}
+
+section{
+
+}
+
+article{
+
+}
+
+article h2{
+    color:dodgerblue;
+}
