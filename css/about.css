@@ -32,6 +32,11 @@ article h2{
     list-style-type: decimal;
 }
 
-#favMovieList a{
+#favMovieList>li a{
     color:red
+}
+
+article img{
+    width:100px;
+    height:150px;
 }
