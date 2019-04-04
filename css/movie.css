@@ -78,8 +78,8 @@ h1{
 }
 
 .paginat{
-    clear:right;
-    clear:left;
+    clear:both;
+
     text-align: center;
     vertical-align: center;
 
