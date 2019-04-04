@@ -102,6 +102,7 @@ h1{
     box-sizing: border-box;
     padding:8px;
     overflow: hidden;
+    order:0;
 }
 
 .review-item p>img{
@@ -109,3 +110,51 @@ h1{
     padding:5px;
 }
 
+.item6{
+    order: 1;
+}
+.item1{
+    order: 0;
+}
+.item2{
+    order:2;
+}
+
+
+.item3{
+    order:4;
+}
+
+.item4{
+    order:6;
+}
+
+.item5{
+    order:8;
+}
+
+.item7{
+    order:3;
+}
+
+.item8{
+    order:5;
+}
+
+.item9{
+    order:7;
+}
+
+.item10{
+    order:9;
+}
+
+.errchecking{
+    position:fixed;
+    margin-top:20px;
+    bottom:2px;
+    right:5px;
+}
+.errchecking p{
+    display: inline-block;
+}
