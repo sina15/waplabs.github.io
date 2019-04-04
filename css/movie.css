@@ -73,6 +73,7 @@ h1{
     background-image: url("../images/rbg.png");
     color:red;
     width: 100%;
+    background-repeat: repeat-x;
 
 }
 
