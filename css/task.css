@@ -80,3 +80,15 @@ footer{
 
 }
 
+
+.errchecking{
+    position:fixed;
+    margin-top:20px;
+    bottom:2px;
+    right:5px;
+}
+.errchecking p{
+    display: inline-block;
+}
+
+
