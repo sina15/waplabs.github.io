@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task List</title>
+    <link rel="stylesheet" href="css/task.css" type="text/css">
+</head>
+<body>
+
+<header>
+   <div>Task List</div>
+</header>
+<section>
+<form action="" method=""  class="myForm">
+    <div>
+    <label>Task</label><br/>
+    <input type="text" placeholder="Breakfast at Tiffanys">
+    </div>
+    <div>
+    <label>Required by</label><br/>
+    <input type="date" >
+    </div>
+    <div>
+    <label>Category</label><br/>
+    <select>
+        <option value="Personal">Personal</option>
+        <option value="Common">Common</option>
+        <option value="Public">Public</option>
+        <option value="Work">Work</option>
+    </select>
+    </div>
+    <div>
+    <input type="submit" value="Save Task">
+    <input type="reset" value="Clear Task">
+        </div>
+</form>
+
+    <table>
+
+        <tr>
+            <th>Name</th>
+            <th>Due</th>
+            <th>Category</th>
+        </tr>
+
+        <tr>
+            <td>Return Library Book</td>
+            <td>2013-10-14</td>
+            <td>Personal</td>
+
+        </tr>
+
+        <tr>
+            <td>Perform project demo to stakeholders</td>
+            <td>2013-10-14</td>
+            <td>Work</td>
+
+        </tr>
+
+        <tr>
+            <td>Meet friends for dinner</td>
+            <td>2013-10-14</td>
+            <td>Personal</td>
+        </tr>
+    </table>
+
+    <input type="button" value="Add Task">
+
+</section>
+
+<footer>
+    <div>You have 3 Tasks</div>
+</footer>
+</body>
+</html>

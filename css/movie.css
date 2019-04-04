@@ -10,7 +10,7 @@ body{
 #imgbanner{
     background-image: url("../images/bannerbg.png");
     text-align: center;
-    background-repeat: no-repeat;
+
 }
 
 h1{
@@ -73,6 +73,7 @@ h1{
     background-image: url("../images/rbg.png");
     color:red;
     width: 100%;
+
 }
 
 .paginat{
