@@ -2,10 +2,30 @@
 
 /* runs test to see if expected argument is === to value returned by function2test argument */
 function myFunctionTest(expected, function2test) {
-    if (expected === function2test()) {
-        return "TEST SUCCEEDED";
-    } else {
-        return "TEST FAILED.  Expected " + expected + " found " + function2test();
+
+    if (Array.isArray(expected) && Array.isArray(function2test())){
+
+
+        if (expected.length != function2test().length){
+
+            return "TEST FAILED.  Expected " + expected.toString() + " found " + function2test().toString();
+        }else{
+
+            for(var i = 0; i<expected.length; i++){
+
+                if(expected[i] != function2test()[i]){
+                    return "TEST FAILED.  Expected " + expected.toString() + " found " + function2test().toString();
+                }
+            }
+            return "TEST SUCCEEDED"
+        }
+
+    }else{
+        if (expected === function2test()) {
+            return "TEST SUCCEEDED";
+        } else {
+            return "TEST FAILED.  Expected " + expected + " found " + function2test();
+        }
     }
 
 }
@@ -35,9 +55,9 @@ console.log("Expected output of maxOfThree(5,4,44) is 44  " + myFunctionTest(44,
 console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(55, function () {
     return maxOfThree(55, 4, 44);
 }));
-console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(4, function () {
-    return maxOfThree(55, 4, 44);
-}));
+// console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(4, function () {
+//     return maxOfThree(55, 4, 44);
+// }));
 
 
 function isVowel(x){
@@ -128,8 +148,8 @@ function filterLongWords(words,n){
 
 }
 
-console.log("Expected output of findLongestWord([sinayobye,christopher,li]) is sinayobye,christopher:  " + myFunctionTest(["sinayobye","christopher"], function () {
-    return filterLongWords(["sinayobye","christopher","li"]);
+console.log("Expected output of filterLongestWord([sinayobye,christopher,li],4) is sinayobye,christopher:  " + myFunctionTest(["sinayobye","christopher"], function () {
+    return filterLongWords(["sinayobye","christopher","li"],4);
 }));
 
 
@@ -148,7 +168,7 @@ console.log("Expected output of withMap([2,3,4,5,6,7]) is [12,13,14,15,16,17]:  
 
 function elementEqualtothree(numbers){
 
-     numbers.filter(function(elem,i,array){
+    return  numbers.filter(function(elem,i,array){
 
         return elem==3;
     })
