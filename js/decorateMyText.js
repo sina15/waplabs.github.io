@@ -5,8 +5,7 @@ var igpay = document.getElementById("igpay");
 var Malkovitch = document.getElementById("Malkovitch");
 
 
-var a = !10
-alert(a)
+
 
 biggerBtn.onclick = clickMe;
     var myInt =0
