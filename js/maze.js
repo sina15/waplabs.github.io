@@ -15,7 +15,7 @@ $(function(){
 
         bindMouOver()
         getEndclick()
-        alert("nind")
+
 
 
     })
