@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Test</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/test.js"></script>
+    <style>
+        .myDiv{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .myDiv p{
+            order:0
+        }
+
+        .myDiv div{
+            order:2
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="myDiv">
+    <div>
+    <img src="images/me.png">
+    </div>
+    <div>
+    <img src="images/me.png">
+    </div>
+   <p> One thing to remember, that once a block element is positioned as fixed or absolute, it will ONLY occupy the space of its content rather than taking the whole width space.
+     Same thing applies for block elements with float.</p>
+</div>
+
+<form action="#" method="post" id="myForm">
+    <p>
+    <label > Name: <input type="text" name="name" pattern="[a-zA-Z0-9_$]+" required> </label><br/>
+    </p>
+   <p>
+    <label> Street: <input type="text" name="street" pattern="[a-zA-Z0-9_$]+" required title="must me number"></label><br/>
+   </p>
+    <p>
+       <label>state: <select name="state" id="states" required>
+        <option value="Iowa" selected>Ia</option>
+        <option value="Los Angeles">La</option>
+    </select> </label><br/>
+    </p>
+
+    <p>
+    <label>Zip: <input type="number" name="zip" required pattern="[0-9]{5}"></label><br/>
+    </p>
+    <p>
+    <label>How many seats? <input type="number" pattern="[0-199]{1}" required name="seats"> </label><br/>
+    </p>
+    <p>
+    <fieldset name="WHnich Taxi do youo require?">
+        <legend>Which Taxi do youo require</legend>
+        <input type="radio" name="taxi" value="taxi">Taxi
+        <input type="radio" name="taxi"value="van">Van
+    </fieldset>
+    </p>
+    <p>
+    <input type="submit" value="submit form">
+    </p>
+</form>
+ </body>
+</html>
